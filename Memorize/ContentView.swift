@@ -9,44 +9,52 @@ import SwiftUI
 
 struct ContentView: View {
     var emojis = ["🌗", "🪐", "🌚", "🌞","🌝", "🌜", "🌕", "🌛", "🌖", "🌘", "🌑", "🌒", "🌓", "🌔", "🌙", "🌎", "🌍", "🌏", "☄️"]
-    @State var emojiCount = 5
+    @State var emojiCount = 9
     
     var body: some View {
         VStack {
-            HStack {
-                ForEach(emojis[0..<emojiCount], id: \.self) { emoji in
-                    CardView(content: emoji)
-                }
+          ScrollView {
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
+              ForEach(emojis[0..<emojiCount], id: \.self) { emoji in
+                CardView(content: emoji).aspectRatio(2/3, contentMode: .fit)
+              }
             }
+          }
+            .foregroundColor(.yellow)
+            Spacer()
             HStack {
                 remove
                 Spacer()
                 add
             }
+            .font(.largeTitle)
             .padding(.horizontal)
         }
         .padding(.horizontal)
-        .foregroundColor(.blue)
     }
     
     var add: some View {
-        Button(action: {
+        Button{
+          if emojiCount < emojis.count {
             emojiCount += 1
-        }, label: {
+          }
+        } label: {
             VStack {
                 Image(systemName: "plus.app")
             }
-        })
+        }
     }
     
     var remove: some View {
-        Button(action: {
+        Button{
+          if emojiCount > 1 {
             emojiCount -= 1
-        }, label: {
+          }
+        } label: {
             VStack {
                 Image(systemName: "minus.square")
             }
-        })
+        }
     }
 }
 
@@ -59,7 +67,7 @@ struct CardView: View {
             let shape = RoundedRectangle(cornerRadius: 20)
             if isFaceUp {
                 shape.fill().foregroundColor(.white)
-                shape.stroke(lineWidth: 3)
+                shape.strokeBorder(lineWidth: 3)
                 Text(content).font(.largeTitle)
             } else {
                 shape.fill()
