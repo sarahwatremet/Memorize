@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		DCA86BDA28EC6EC10098DB04 /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA86BD928EC6EC10098DB04 /* MemorizeApp.swift */; };
-		DCA86BDC28EC6EC10098DB04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA86BDB28EC6EC10098DB04 /* ContentView.swift */; };
+		DCA86BDC28EC6EC10098DB04 /* PlanetThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA86BDB28EC6EC10098DB04 /* PlanetThemeView.swift */; };
 		DCA86BDE28EC6EC20098DB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA86BDD28EC6EC20098DB04 /* Assets.xcassets */; };
 		DCA86BE128EC6EC20098DB04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA86BE028EC6EC20098DB04 /* Preview Assets.xcassets */; };
+		DCCE563F28FD5A0D007EDF01 /* ThemeChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCE563E28FD5A0D007EDF01 /* ThemeChoice.swift */; };
+		DCCE564328FD5CAB007EDF01 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCE564228FD5CAB007EDF01 /* CardView.swift */; };
+		DCCE564728FD61C3007EDF01 /* PlantThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCE564628FD61C3007EDF01 /* PlantThemeView.swift */; };
+		DCCE564928FD624A007EDF01 /* FruitsThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCE564828FD624A007EDF01 /* FruitsThemeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DCA86BD628EC6EC10098DB04 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA86BD928EC6EC10098DB04 /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
-		DCA86BDB28EC6EC10098DB04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DCA86BDB28EC6EC10098DB04 /* PlanetThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetThemeView.swift; sourceTree = "<group>"; };
 		DCA86BDD28EC6EC20098DB04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCA86BE028EC6EC20098DB04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCCE563E28FD5A0D007EDF01 /* ThemeChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChoice.swift; sourceTree = "<group>"; };
+		DCCE564228FD5CAB007EDF01 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DCCE564628FD61C3007EDF01 /* PlantThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantThemeView.swift; sourceTree = "<group>"; };
+		DCCE564828FD624A007EDF01 /* FruitsThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsThemeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				DCA86BD928EC6EC10098DB04 /* MemorizeApp.swift */,
-				DCA86BDB28EC6EC10098DB04 /* ContentView.swift */,
+				DCCE563E28FD5A0D007EDF01 /* ThemeChoice.swift */,
+				DCA86BDB28EC6EC10098DB04 /* PlanetThemeView.swift */,
+				DCCE564628FD61C3007EDF01 /* PlantThemeView.swift */,
+				DCCE564828FD624A007EDF01 /* FruitsThemeView.swift */,
+				DCCE564228FD5CAB007EDF01 /* CardView.swift */,
 				DCA86BDD28EC6EC20098DB04 /* Assets.xcassets */,
 				DCA86BDF28EC6EC20098DB04 /* Preview Content */,
 			);
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCA86BDC28EC6EC10098DB04 /* ContentView.swift in Sources */,
+				DCCE564728FD61C3007EDF01 /* PlantThemeView.swift in Sources */,
+				DCA86BDC28EC6EC10098DB04 /* PlanetThemeView.swift in Sources */,
 				DCA86BDA28EC6EC10098DB04 /* MemorizeApp.swift in Sources */,
+				DCCE564328FD5CAB007EDF01 /* CardView.swift in Sources */,
+				DCCE563F28FD5A0D007EDF01 /* ThemeChoice.swift in Sources */,
+				DCCE564928FD624A007EDF01 /* FruitsThemeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
