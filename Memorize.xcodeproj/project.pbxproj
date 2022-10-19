@@ -15,6 +15,8 @@
 		DCCE564328FD5CAB007EDF01 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCE564228FD5CAB007EDF01 /* CardView.swift */; };
 		DCCE564728FD61C3007EDF01 /* PlantThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCE564628FD61C3007EDF01 /* PlantThemeView.swift */; };
 		DCCE564928FD624A007EDF01 /* FruitsThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCE564828FD624A007EDF01 /* FruitsThemeView.swift */; };
+		DCF8ECB82900435900BCE33A /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8ECB72900435900BCE33A /* MemoryGame.swift */; };
+		DCF8ECBA2900460000BCE33A /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8ECB92900460000BCE33A /* EmojiMemoryGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		DCCE564228FD5CAB007EDF01 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DCCE564628FD61C3007EDF01 /* PlantThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantThemeView.swift; sourceTree = "<group>"; };
 		DCCE564828FD624A007EDF01 /* FruitsThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsThemeView.swift; sourceTree = "<group>"; };
+		DCF8ECB72900435900BCE33A /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		DCF8ECB92900460000BCE33A /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				DCA86BD928EC6EC10098DB04 /* MemorizeApp.swift */,
-				DCCE563E28FD5A0D007EDF01 /* ThemeChoice.swift */,
-				DCA86BDB28EC6EC10098DB04 /* PlanetThemeView.swift */,
-				DCCE564628FD61C3007EDF01 /* PlantThemeView.swift */,
-				DCCE564828FD624A007EDF01 /* FruitsThemeView.swift */,
-				DCCE564228FD5CAB007EDF01 /* CardView.swift */,
+				DCF8ECBD290048F000BCE33A /* Views */,
+				DCF8ECBB290048DA00BCE33A /* Model */,
+				DCF8ECBC290048E200BCE33A /* ViewModel */,
 				DCA86BDD28EC6EC20098DB04 /* Assets.xcassets */,
 				DCA86BDF28EC6EC20098DB04 /* Preview Content */,
 			);
@@ -77,6 +79,34 @@
 				DCA86BE028EC6EC20098DB04 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCF8ECBB290048DA00BCE33A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCF8ECB72900435900BCE33A /* MemoryGame.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCF8ECBC290048E200BCE33A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DCF8ECB92900460000BCE33A /* EmojiMemoryGame.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DCF8ECBD290048F000BCE33A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCCE563E28FD5A0D007EDF01 /* ThemeChoice.swift */,
+				DCA86BDB28EC6EC10098DB04 /* PlanetThemeView.swift */,
+				DCCE564628FD61C3007EDF01 /* PlantThemeView.swift */,
+				DCCE564828FD624A007EDF01 /* FruitsThemeView.swift */,
+				DCCE564228FD5CAB007EDF01 /* CardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +185,8 @@
 				DCCE564328FD5CAB007EDF01 /* CardView.swift in Sources */,
 				DCCE563F28FD5A0D007EDF01 /* ThemeChoice.swift in Sources */,
 				DCCE564928FD624A007EDF01 /* FruitsThemeView.swift in Sources */,
+				DCF8ECB82900435900BCE33A /* MemoryGame.swift in Sources */,
+				DCF8ECBA2900460000BCE33A /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
