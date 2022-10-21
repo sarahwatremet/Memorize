@@ -8,56 +8,32 @@
 import SwiftUI
 
 struct PlanetThemeView: View {
-  var planetThemeEmojis = ["🌗", "🪐", "🌚", "🌞","🌝", "🌜", "🌕", "🌛", "🌖", "🌘", "🌑", "🌒", "🌓", "🌔", "🌙", "🌎", "🌍", "🌏", "☄️"]
-  @State var emojiCount = 12
+    let viewModel: EmojiMemoryGame
     
-  var body: some View {
-    NavigationStack {
-      VStack {
-        ScrollView {
-          LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
-            ForEach(planetThemeEmojis.shuffled()[0..<emojiCount], id: \.self) { emoji in
-              CardView(content: emoji).aspectRatio(2/3, contentMode: .fit)
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
+                    ForEach(viewModel.cards) { card in
+                        CardView(card: card)
+                            .aspectRatio(2/3, contentMode: .fit)
+                    }
+                }
             }
-          }
+            .foregroundColor(.yellow)
+            .font(.largeTitle)
+            .padding(.horizontal)
         }
-        .foregroundColor(.yellow)
-        .font(.largeTitle)
         .padding(.horizontal)
-      }
-      .padding(.horizontal)
-      .navigationTitle("Memorize!")
+        .navigationTitle("Memorize!")
         .navigationBarTitleDisplayMode(.inline)
     }
-  }
-    
-//    var add: some View {
-//        Button{
-//          if emojiCount < emojis.count {
-//            emojiCount += 1
-//          }
-//        } label: {
-//            VStack {
-//                Image(systemName: "plus.app")
-//            }
-//        }
-//    }
-//
-//    var remove: some View {
-//        Button{
-//          if emojiCount > 1 {
-//            emojiCount -= 1
-//          }
-//        } label: {
-//            VStack {
-//                Image(systemName: "minus.square")
-//            }
-//        }
-//    }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        PlanetThemeView()
+        let game = EmojiMemoryGame()
+        PlanetThemeView(viewModel: game)
     }
 }

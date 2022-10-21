@@ -8,14 +8,18 @@
 import SwiftUI
 
 class EmojiMemoryGame {
-  static let planetThemeEmojis = ["🌗", "🪐", "🌚", "🌞","🌝", "🌜", "🌕", "🌛", "🌖", "🌘", "🌑", "🌒", "🌓", "🌔", "🌙", "🌎", "🌍", "🌏", "☄️"]
-  
-  static func createMemoryGame() -> MemoryGame<String> {
-    MemoryGame<String>(numberOfPairsOfCards: 5) { pairIndex in
-      planetThemeEmojis[pairIndex]
+    static let planetThemeEmojis = ["🌗", "🪐", "🌚", "🌞","🌝", "🌜", "🌕", "🌛", "🌖", "🌘", "🌑", "🌒", "🌓", "🌔", "🌙", "🌎", "🌍", "🌏", "☄️"]
+    
+    static func createMemoryGame() -> MemoryGame<String> {
+        MemoryGame<String>(numberOfPairsOfCards: 6) { pairIndex in
+            planetThemeEmojis[pairIndex]
+        }
     }
-  }
-  
-  private(set) var model: MemoryGame<String> = createMemoryGame()
+    
+    private var model: MemoryGame<String> = createMemoryGame()
+    
+    var cards: Array<MemoryGame<String>.Card> {
+        model.cards
+    }
 }
 

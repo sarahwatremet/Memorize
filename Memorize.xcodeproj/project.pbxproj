@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004A25842902A379009281E4 /* MemorizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A25832902A379009281E4 /* MemorizeTests.swift */; };
 		DCA86BDA28EC6EC10098DB04 /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA86BD928EC6EC10098DB04 /* MemorizeApp.swift */; };
 		DCA86BDC28EC6EC10098DB04 /* PlanetThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA86BDB28EC6EC10098DB04 /* PlanetThemeView.swift */; };
 		DCA86BDE28EC6EC20098DB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA86BDD28EC6EC20098DB04 /* Assets.xcassets */; };
@@ -19,7 +20,19 @@
 		DCF8ECBA2900460000BCE33A /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8ECB92900460000BCE33A /* EmojiMemoryGame.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		004A25852902A379009281E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCA86BCE28EC6EC10098DB04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCA86BD528EC6EC10098DB04;
+			remoteInfo = Memorize;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		004A25812902A379009281E4 /* MemorizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemorizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		004A25832902A379009281E4 /* MemorizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeTests.swift; sourceTree = "<group>"; };
 		DCA86BD628EC6EC10098DB04 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA86BD928EC6EC10098DB04 /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
 		DCA86BDB28EC6EC10098DB04 /* PlanetThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetThemeView.swift; sourceTree = "<group>"; };
@@ -34,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		004A257E2902A379009281E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCA86BD328EC6EC10098DB04 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,10 +64,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004A25822902A379009281E4 /* MemorizeTests */ = {
+			isa = PBXGroup;
+			children = (
+				004A25832902A379009281E4 /* MemorizeTests.swift */,
+			);
+			path = MemorizeTests;
+			sourceTree = "<group>";
+		};
 		DCA86BCD28EC6EC10098DB04 = {
 			isa = PBXGroup;
 			children = (
 				DCA86BD828EC6EC10098DB04 /* Memorize */,
+				004A25822902A379009281E4 /* MemorizeTests */,
 				DCA86BD728EC6EC10098DB04 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				DCA86BD628EC6EC10098DB04 /* Memorize.app */,
+				004A25812902A379009281E4 /* MemorizeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +142,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		004A25802902A379009281E4 /* MemorizeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004A25872902A379009281E4 /* Build configuration list for PBXNativeTarget "MemorizeTests" */;
+			buildPhases = (
+				004A257D2902A379009281E4 /* Sources */,
+				004A257E2902A379009281E4 /* Frameworks */,
+				004A257F2902A379009281E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				004A25862902A379009281E4 /* PBXTargetDependency */,
+			);
+			name = MemorizeTests;
+			productName = MemorizeTests;
+			productReference = 004A25812902A379009281E4 /* MemorizeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DCA86BD528EC6EC10098DB04 /* Memorize */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCA86BE428EC6EC20098DB04 /* Build configuration list for PBXNativeTarget "Memorize" */;
@@ -139,6 +187,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					004A25802902A379009281E4 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = DCA86BD528EC6EC10098DB04;
+					};
 					DCA86BD528EC6EC10098DB04 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -158,11 +210,19 @@
 			projectRoot = "";
 			targets = (
 				DCA86BD528EC6EC10098DB04 /* Memorize */,
+				004A25802902A379009281E4 /* MemorizeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		004A257F2902A379009281E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCA86BD428EC6EC10098DB04 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,6 +235,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		004A257D2902A379009281E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004A25842902A379009281E4 /* MemorizeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCA86BD228EC6EC10098DB04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,7 +260,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		004A25862902A379009281E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCA86BD528EC6EC10098DB04 /* Memorize */;
+			targetProxy = 004A25852902A379009281E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		004A25882902A379009281E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVCLVWK89H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sarahlawat.MemorizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memorize.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Memorize";
+			};
+			name = Debug;
+		};
+		004A25892902A379009281E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVCLVWK89H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sarahlawat.MemorizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memorize.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Memorize";
+			};
+			name = Release;
+		};
 		DCA86BE228EC6EC20098DB04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -368,6 +480,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		004A25872902A379009281E4 /* Build configuration list for PBXNativeTarget "MemorizeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004A25882902A379009281E4 /* Debug */,
+				004A25892902A379009281E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCA86BD128EC6EC10098DB04 /* Build configuration list for PBXProject "Memorize" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
